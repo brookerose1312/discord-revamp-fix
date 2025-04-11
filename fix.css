@@ -1,0 +1,23 @@
+main[class^=chatContent] form {
+    background: var(--bg-overlay-chat, var(--background-base-lower));
+}
+
+section[aria-label="User area"] {
+    --custom-panels-spacing: 0px !important;
+    background: var(--bg-overlay-chat, var(--background-base-lower)) !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+section[aria-label="User area"] > div[class^=panel] {
+    background: var(--bg-overlay-chat, var(--background-base-lower));
+    border-radius: 0px;
+}
+
+div[class^=sidebar] > nav[aria-label="Servers sidebar"] {
+    margin-bottom: calc(var(--custom-app-panels-height, 0))
+}
+
+div[class^=sidebarList] > nav > div[class^=scroller] {
+    margin-bottom: 0px;
+}
